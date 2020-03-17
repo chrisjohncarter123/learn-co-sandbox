@@ -1,7 +1,7 @@
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
-require './passage'
+require_relative './passage.rb'
 
 #ask for verse
 #example input: 1 .. 27

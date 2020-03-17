@@ -1,5 +1,5 @@
-require './scraper'
-require './passage'
+require_relative './scraper.rb'
+require_relative './passage.rb'
 
 
 class CLI
@@ -50,7 +50,9 @@ class CLI
     
       puts "Please select a menu option:"
       
+
       input = get_input
+
       
       if(input == 'q')
         puts "Goodbye!"
@@ -69,8 +71,9 @@ class CLI
       puts "(press enter to continue)"
       
       input = get_input
+
       
-      
+
 
     end
   end
@@ -80,12 +83,11 @@ class CLI
     gets.chomp
   end
   
+
   def is_integer(input)
     input.to_i.to_s == input
   end
   
 end
 
-
-CLI.new.run
 
